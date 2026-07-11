@@ -1,0 +1,101 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #000000;
+}
+
+#unity-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#unity-canvas {
+	width: 100vw !important;
+	height: 100vh !important;
+	display: block;
+	background: #000000;
+}
+
+#unity-footer,
+#unity-logo {
+	display: none !important;
+}
+
+#unity-loading-bar {
+	position: absolute;
+	inset: 0;
+	display: none;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 8px 10px;
+	box-sizing: border-box;
+	background: #000000;
+	color: #d0d0d0;
+	font-family: Consolas, "Cascadia Mono", "Courier New", monospace;
+}
+
+#console-loader {
+	width: 100%;
+}
+
+#boot-logo {
+	margin: 0 0 1.2em;
+	font: inherit;
+	line-height: 1.05;
+	white-space: pre;
+}
+
+#console-lines,
+#console-progress-text,
+.console-prompt {
+	font-size: 16px;
+	line-height: 1.28;
+	white-space: nowrap;
+}
+
+#console-lines {
+	margin-bottom: 1.28em;
+}
+
+.boot-ok {
+	color: #d0d0d0;
+	font-weight: 700;
+}
+
+.console-cursor {
+	display: inline-block;
+	width: 9px;
+	height: 1em;
+	margin-left: 2px;
+	vertical-align: -0.12em;
+	background: #d0d0d0;
+	animation: console-cursor-blink 1s steps(2, start) infinite;
+}
+
+#unity-warning {
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%);
+	background: white;
+	padding: 10px;
+	display: none;
+}
+
+@keyframes console-cursor-blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+@media (max-width: 520px) {
+	#console-lines,
+	#console-progress-text,
+	.console-prompt {
+		font-size: 12px;
+	}
+}
