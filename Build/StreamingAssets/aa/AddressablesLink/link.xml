@@ -2,6 +2,8 @@
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="CameraZoomController" preserve="all" />
     <type fullname="Game.Object.AmbientShipSpawner" preserve="all" />
+    <type fullname="Game.Object.Asteroid" preserve="all" />
+    <type fullname="Game.Object.AsteroidSpawner" preserve="all" />
     <type fullname="Game.Object.AutoPilot" preserve="all" />
     <type fullname="Game.Object.AutoPilotButton" preserve="all" />
     <type fullname="Game.Object.Beamer" preserve="all" />

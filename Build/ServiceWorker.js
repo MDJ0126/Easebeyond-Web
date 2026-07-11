@@ -1,4 +1,4 @@
-const cacheName = "DefaultCompany-Stellar Drift-0.1.0-terminal3";
+const cacheName = "DefaultCompany-Easebeyond-0.1.0-terminal3";
 const contentToCache = [
     "Build/Build.loader.js",
     "Build/Build.framework.js.unityweb",
@@ -32,6 +32,10 @@ self.addEventListener('activate', function (e) {
 self.addEventListener('fetch', function (e) {
     e.respondWith((async function () {
       const requestUrl = new URL(e.request.url);
+      if (e.request.mode === "navigate") {
+        return fetch(e.request, { cache: "no-store" });
+      }
+
       if (requestUrl.pathname.includes("/StreamingAssets/")) {
         return fetch(e.request, { cache: "no-store" });
       }
