@@ -1,14 +1,14 @@
-# Stellar Drift
+# Easebeyond
 
-![Stellar Drift preview](./image/readme.png)
+![Easebeyond preview](./image/readme.png)
 
 **A quiet journey through drifting stars.**
 
-Stellar Drift is a small space experience where you can look across a calm stellar field and enjoy the atmosphere of deep space.
+Easebeyond is a small space experience where you can look across a calm stellar field and enjoy the atmosphere of deep space.
 
 ## Play
 
-[Launch Stellar Drift](https://mdj0126.github.io/StellarDrift-Web/)
+[Launch Easebeyond](https://mdj0126.github.io/Easebeyond-Web/)
 
 ## About
 
@@ -18,7 +18,7 @@ Stellar Drift is a small space experience where you can look across a calm stell
 
 ## Project
 
-This repository contains the deployment-ready website and Unity WebGL build for Stellar Drift.
+This repository contains the deployment-ready website and Unity WebGL build for Easebeyond.
 
 - `index.html`: GitHub Pages entry point
 - `Build/`: Unity WebGL build and runtime assets
