@@ -1,6 +1,7 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="CameraZoomController" preserve="all" />
+    <type fullname="Game.Firebase.FirebaseAuthManager" preserve="all" />
     <type fullname="Game.Object.AmbientShipSpawner" preserve="all" />
     <type fullname="Game.Object.Asteroid" preserve="all" />
     <type fullname="Game.Object.AsteroidSpawner" preserve="all" />
@@ -27,6 +28,7 @@
     <type fullname="GamePlayManager" preserve="all" />
     <type fullname="GameResourceManager" preserve="all" />
     <type fullname="InputManager" preserve="all" />
+    <type fullname="LoginUI" preserve="all" />
     <type fullname="SpaceAudioManager" preserve="all" />
     <type fullname="SpaceSceneBootstrap" preserve="all" />
     <type fullname="VersionText" preserve="all" />
@@ -117,6 +119,11 @@
     <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
   </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AudioClip" preserve="all" />
     <type fullname="UnityEngine.AudioListener" preserve="all" />
@@ -135,6 +142,7 @@
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
