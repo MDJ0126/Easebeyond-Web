@@ -1,4 +1,4 @@
-const cacheName = "DefaultCompany-Easebeyond-0.1.0-terminal3";
+const cacheName = "DefaultCompany-Easebeyond-0.1.0-terminal4";
 const contentToCache = [
     "Build/Build.loader.js",
     "Build/Build.framework.js.unityweb",

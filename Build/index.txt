@@ -7,6 +7,62 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css?v={{{ VERSION }}}">
     <link rel="manifest" href="manifest.webmanifest">
++    <script>
+      window.easebeyondFirebaseReady = new Promise(function (resolve) {
+        window.resolveEasebeyondFirebase = resolve;
+      });
+    </script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
+      import {
+        getAuth,
+        GoogleAuthProvider,
+        onAuthStateChanged,
+        signInWithPopup,
+        signOut
+      } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyD6adTzbXiOYOTPyT5-nXzfSBnKJQnUcXM",
+        authDomain: "easebeyond-f4849.firebaseapp.com",
+        projectId: "easebeyond-f4849",
+        storageBucket: "easebeyond-f4849.firebasestorage.app",
+        messagingSenderId: "975739301862",
+        appId: "1:975739301862:web:22a6d03076b43637177027",
+        measurementId: "G-6FWQETB5HH"
+      };
+
+      const firebaseApp = initializeApp(firebaseConfig);
+      const firebaseAuth = getAuth(firebaseApp);
+      const googleProvider = new GoogleAuthProvider();
+
+      window.easebeyondSignInWithGoogle = async function () {
+        const result = await signInWithPopup(firebaseAuth, googleProvider);
+        return {
+          userId: result.user.uid,
+          displayName: result.user.displayName || "",
+          email: result.user.email || "",
+          photoUrl: result.user.photoURL || ""
+        };
+      };
+
+      window.easebeyondSignOut = function () {
+        return signOut(firebaseAuth);
+      };
+
+      window.easebeyondObserveAuthState = function (onChanged) {
+        onAuthStateChanged(firebaseAuth, function (user) {
+          onChanged(user ? {
+            userId: user.uid,
+            displayName: user.displayName || "",
+            email: user.email || "",
+            photoUrl: user.photoURL || ""
+          } : null);
+        });
+      };
+
+      window.resolveEasebeyondFirebase();
+    </script>
   </head>
   <body>
     <div id="unity-container">
