@@ -8,15 +8,18 @@
     <type fullname="Game.Object.AutoPilot" preserve="all" />
     <type fullname="Game.Object.AutoPilotButton" preserve="all" />
     <type fullname="Game.Object.Beamer" preserve="all" />
+    <type fullname="Game.Object.ButtonClickAnimation" preserve="all" />
     <type fullname="Game.Object.CreditsText" preserve="all" />
     <type fullname="Game.Object.Cutter" preserve="all" />
     <type fullname="Game.Object.DisplayToggleButton" preserve="all" />
+    <type fullname="Game.Object.LoadingSpinner" preserve="all" />
     <type fullname="Game.Object.LockOnReticle" preserve="all" />
     <type fullname="Game.Object.OptionToggleButton" preserve="all" />
     <type fullname="Game.Object.OrbitMotion" preserve="all" />
     <type fullname="Game.Object.Scout" preserve="all" />
     <type fullname="Game.Object.Skimmer" preserve="all" />
     <type fullname="Game.Object.SolarSystemBuilder" preserve="all" />
+    <type fullname="Game.Object.SupportButton" preserve="all" />
     <type fullname="Game.Object.Swirler" preserve="all" />
     <type fullname="Game.Object.TheRam" preserve="all" />
     <type fullname="Game.Object.TriShot" preserve="all" />
@@ -30,7 +33,8 @@
     <type fullname="InputManager" preserve="all" />
     <type fullname="LoginUI" preserve="all" />
     <type fullname="SpaceAudioManager" preserve="all" />
-    <type fullname="SpaceSceneBootstrap" preserve="all" />
+    <type fullname="SpaceSceneController" preserve="all" />
+    <type fullname="UserInfoUI" preserve="all" />
     <type fullname="VersionText" preserve="all" />
     <type fullname="Game.Skill.HomingMissileSkillData/Data" preserve="nothing" serialized="true" />
     <type fullname="Game.Object.AmbientShipSpawner/SpawnInfo" preserve="nothing" serialized="true" />
