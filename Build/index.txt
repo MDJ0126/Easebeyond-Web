@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css?v={{{ VERSION }}}">
     <link rel="manifest" href="manifest.webmanifest">
-+    <script>
+    <script>
       window.easebeyondFirebaseReady = new Promise(function (resolve) {
         window.resolveEasebeyondFirebase = resolve;
       });
@@ -21,6 +21,8 @@
         signInWithPopup,
         signOut
       } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
+      import { doc, getDoc, getFirestore, onSnapshot, serverTimestamp, setDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
+      import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-functions.js";
 
       const firebaseConfig = {
         apiKey: "AIzaSyD6adTzbXiOYOTPyT5-nXzfSBnKJQnUcXM",
@@ -34,10 +36,36 @@
 
       const firebaseApp = initializeApp(firebaseConfig);
       const firebaseAuth = getAuth(firebaseApp);
+      const firestore = getFirestore(firebaseApp);
+      const firebaseFunctions = getFunctions(firebaseApp, "asia-northeast3");
       const googleProvider = new GoogleAuthProvider();
+      const grantFreeSupporter = httpsCallable(firebaseFunctions, "grantFreeSupporter");
+      const freeSupporterUserId = "oUPrZjVWBmMgSZuWakmFBOqPNNq2";
+      let unsubscribeUserData = null;
+
+      async function saveFirebaseUser(user) {
+        const userReference = doc(firestore, "users", user.uid);
+        const userSnapshot = await getDoc(userReference);
+        const profile = {
+          displayName: user.displayName || "",
+          email: user.email || "",
+          emailNormalized: (user.email || "").toLowerCase(),
+          photoUrl: user.photoURL || "",
+          lastLoginAt: serverTimestamp()
+        };
+
+        if (!userSnapshot.exists()) {
+          profile.createdAt = serverTimestamp();
+          profile.supporter = { isSupporter: false, tier: "none", totalAmount: 0, supportedAt: null };
+          profile.ownedSkins = ["default_ship"];
+        }
+
+        await setDoc(userReference, profile, { merge: true });
+      }
 
       window.easebeyondSignInWithGoogle = async function () {
         const result = await signInWithPopup(firebaseAuth, googleProvider);
+        await saveFirebaseUser(result.user);
         return {
           userId: result.user.uid,
           displayName: result.user.displayName || "",
@@ -51,7 +79,13 @@
       };
 
       window.easebeyondObserveAuthState = function (onChanged) {
-        onAuthStateChanged(firebaseAuth, function (user) {
+        onAuthStateChanged(firebaseAuth, async function (user) {
+          try {
+            if (user) await saveFirebaseUser(user);
+          } catch (error) {
+            console.error("Failed to update Firebase user data.", error);
+          }
+
           onChanged(user ? {
             userId: user.uid,
             displayName: user.displayName || "",
@@ -59,6 +93,39 @@
             photoUrl: user.photoURL || ""
           } : null);
         });
+      };
+
+      window.easebeyondGrantFreeSupporter = function () {
+        if (!firebaseAuth.currentUser || firebaseAuth.currentUser.uid !== freeSupporterUserId) {
+          return Promise.resolve({ data: { granted: false } });
+        }
+
+        return grantFreeSupporter();
+      };
+
+      window.easebeyondObserveUserData = function (userId, onChanged, onError) {
+        if (unsubscribeUserData) unsubscribeUserData();
+        if (!userId) {
+          unsubscribeUserData = null;
+          onChanged(null);
+          return;
+        }
+
+        unsubscribeUserData = onSnapshot(doc(firestore, "users", userId), function (snapshot) {
+          if (!snapshot.exists()) {
+            onChanged(null);
+            return;
+          }
+
+          const data = snapshot.data();
+          const supporter = data.supporter || {};
+          onChanged({
+            isSupporter: supporter.isSupporter === true,
+            supporterTier: supporter.tier || "none",
+            totalSupportAmount: supporter.totalAmount || 0,
+            ownedSkins: Array.isArray(data.ownedSkins) ? data.ownedSkins : []
+          });
+        }, onError);
       };
 
       window.resolveEasebeyondFirebase();
