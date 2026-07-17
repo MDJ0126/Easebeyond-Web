@@ -26,6 +26,7 @@
     <type fullname="Game.Object.VShooter" preserve="all" />
     <type fullname="Game.Skill.HomingMissileSkillData" preserve="all" />
     <type fullname="Game.Skill.HomingMissileSkillObject" preserve="all" />
+    <type fullname="Game.UI.CommonConfirmPopup" preserve="all" />
     <type fullname="Game.UI.LofiPlayerPanel" preserve="all" />
     <type fullname="Game.UI.LofiPlaylistItem" preserve="all" />
     <type fullname="GamePlayManager" preserve="all" />
