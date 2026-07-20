@@ -16,6 +16,7 @@
     <type fullname="Game.Object.LockOnReticle" preserve="all" />
     <type fullname="Game.Object.OptionToggleButton" preserve="all" />
     <type fullname="Game.Object.OrbitMotion" preserve="all" />
+    <type fullname="Game.Object.RainbowBooster" preserve="all" />
     <type fullname="Game.Object.Scout" preserve="all" />
     <type fullname="Game.Object.Skimmer" preserve="all" />
     <type fullname="Game.Object.SolarSystemBuilder" preserve="all" />
