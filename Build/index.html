@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Easebeyond</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css?v=20260720220052">
+    <link rel="stylesheet" href="TemplateData/style.css?v=20260722195021">
     <link rel="manifest" href="manifest.webmanifest">
     <script>
       window.easebeyondFirebaseReady = new Promise(function (resolve) {
@@ -55,9 +55,20 @@
         };
 
         if (!userSnapshot.exists()) {
+          Object.assign(profile, {
+    "role": "user",
+    "ownedSkins": [
+        "default_ship"
+    ],
+    "supporter": {
+        "isSupporter": false,
+        "tier": "none",
+        "totalAmount": 0.0,
+        "currency": ""
+    }
+});
+          profile.supporter.supportedAt = null;
           profile.createdAt = serverTimestamp();
-          profile.supporter = { isSupporter: false, tier: "none", totalAmount: 0, supportedAt: null };
-          profile.ownedSkins = ["default_ship"];
         }
 
         await setDoc(userReference, profile, { merge: true });
@@ -120,6 +131,7 @@
           const data = snapshot.data();
           const supporter = data.supporter || {};
           onChanged({
+            role: data.role || "user",
             isSupporter: supporter.isSupporter === true,
             supporterTier: supporter.tier || "none",
             totalSupportAmount: supporter.totalAmount || 0,
@@ -263,7 +275,7 @@
         updateBannerVisibility();
       }
 
-      var version = "20260720220052"; // C#에서 치환될 부분
+      var version = "20260722195021"; // C#에서 치환될 부분
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Build.loader.js?v=" + version;
       var config = {

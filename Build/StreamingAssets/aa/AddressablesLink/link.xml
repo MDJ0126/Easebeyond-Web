@@ -1,6 +1,9 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="CameraZoomController" preserve="all" />
+    <type fullname="DistressSignal" preserve="all" />
+    <type fullname="DistressSignalManager" preserve="all" />
+    <type fullname="DistressSignalNotificationUI" preserve="all" />
     <type fullname="Game.Firebase.FirebaseAuthManager" preserve="all" />
     <type fullname="Game.Object.AmbientShipSpawner" preserve="all" />
     <type fullname="Game.Object.Asteroid" preserve="all" />
@@ -30,10 +33,12 @@
     <type fullname="Game.UI.CommonConfirmPopup" preserve="all" />
     <type fullname="Game.UI.LofiPlayerPanel" preserve="all" />
     <type fullname="Game.UI.LofiPlaylistItem" preserve="all" />
+    <type fullname="Game.UI.RadarTarget" preserve="all" />
     <type fullname="GamePlayManager" preserve="all" />
     <type fullname="GameResourceManager" preserve="all" />
     <type fullname="InputManager" preserve="all" />
     <type fullname="LoginUI" preserve="all" />
+    <type fullname="RadarUI" preserve="all" />
     <type fullname="SpaceAudioManager" preserve="all" />
     <type fullname="SpaceSceneController" preserve="all" />
     <type fullname="UserInfoUI" preserve="all" />
@@ -187,6 +192,7 @@
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextCoreFontEngineModule">

@@ -55,9 +55,9 @@
         };
 
         if (!userSnapshot.exists()) {
+          Object.assign(profile, {{{ NEW_USER_PROFILE }}});
+          profile.supporter.supportedAt = null;
           profile.createdAt = serverTimestamp();
-          profile.supporter = { isSupporter: false, tier: "none", totalAmount: 0, supportedAt: null };
-          profile.ownedSkins = ["default_ship"];
         }
 
         await setDoc(userReference, profile, { merge: true });
@@ -120,6 +120,7 @@
           const data = snapshot.data();
           const supporter = data.supporter || {};
           onChanged({
+            role: data.role || "user",
             isSupporter: supporter.isSupporter === true,
             supporterTier: supporter.tier || "none",
             totalSupportAmount: supporter.totalAmount || 0,
