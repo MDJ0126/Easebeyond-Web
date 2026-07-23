@@ -1,6 +1,8 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="CameraZoomController" preserve="all" />
+    <type fullname="CommunicationNoiseGraphic" preserve="all" />
+    <type fullname="CommunicationUI" preserve="all" />
     <type fullname="DistressSignal" preserve="all" />
     <type fullname="DistressSignalManager" preserve="all" />
     <type fullname="DistressSignalNotificationUI" preserve="all" />
@@ -175,6 +177,7 @@
     <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
     <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
+    <type fullname="UnityEngine.UI.RawImage" preserve="all" />
     <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
     <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
     <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
