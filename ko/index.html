@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Easebeyond - 무료 우주 탐험 웹게임</title>
+  <meta name="description" content="Easebeyond에서 나만의 우주선을 조종하고 광활한 우주를 탐험하세요. 설치 없이 브라우저에서 바로 즐기는 무료 우주 탐험 게임입니다.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://easebeyond.com/ko/">
+  <link rel="alternate" hreflang="en" href="https://easebeyond.com/">
+  <link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/">
+  <link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://easebeyond.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:url" content="https://easebeyond.com/ko/">
+  <meta property="og:title" content="Easebeyond - 무료 우주 탐험 웹게임">
+  <meta property="og:description" content="나만의 우주선을 조종하고 광활한 우주를 탐험하는 무료 브라우저 게임">
+  <meta property="og:image" content="https://easebeyond.com/image/ogThumbnail.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Easebeyond - 무료 우주 탐험 웹게임">
+  <meta name="twitter:description" content="나만의 우주선을 조종하고 광활한 우주를 탐험하는 무료 브라우저 게임">
+  <meta name="twitter:image" content="https://easebeyond.com/image/ogThumbnail.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Easebeyond",
+      "url": "https://easebeyond.com/ko/",
+      "description": "나만의 우주선을 조종하고 광활한 우주를 탐험하는 무료 브라우저 게임",
+      "applicationCategory": "Game",
+      "gamePlatform": "Web Browser",
+      "inLanguage": "ko",
+      "isAccessibleForFree": true
+    }
+  </script>
+  <link rel="icon" href="../image/favicon.ico">
+  <style>
+    html, body, iframe {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    iframe {
+      position: fixed;
+      inset: 0;
+    }
+    .intro {
+      position: fixed;
+      z-index: 1;
+      right: 16px;
+      bottom: 16px;
+      max-width: min(420px, calc(100% - 32px));
+      color: #fff;
+      background: rgba(7, 12, 22, .92);
+      border: 1px solid rgba(255, 255, 255, .25);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-family: system-ui, sans-serif;
+    }
+    .intro summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .intro h1 {
+      margin: 12px 0 6px;
+      font-size: 18px;
+    }
+    .intro p, .intro nav {
+      margin: 6px 0;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .intro a {
+      color: #9ecbff;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="game" src="../Build/" title="Easebeyond 우주 탐험 게임" allow="fullscreen; autoplay" allowfullscreen></iframe>
+  <details id="intro" class="intro" open>
+    <summary>Easebeyond 한국어 소개</summary>
+    <h1>무료 우주 탐험 웹게임 Easebeyond</h1>
+    <p>나만의 우주선을 조종하고 우주 크루즈를 즐기며 광활한 우주를 탐험하세요. 게임은 자동으로 실행됩니다.</p>
+    <nav><a href="/">English</a> · <a href="/ja/">日本語</a></nav>
+  </details>
+  <script>
+    document.querySelector("#game").addEventListener("load", function () {
+      window.setTimeout(function () {
+        document.querySelector("#intro").removeAttribute("open");
+      }, 1200);
+    });
+  </script>
+</body>
+</html>
