@@ -24,6 +24,7 @@ This repository contains the deployment-ready website and Unity WebGL build for 
 - `site/page.template.html`: shared localized page template
 - `site/locales.json`: localized titles and descriptions
 - `scripts/generate-pages.mjs`: page and sitemap generator
+- `sitemap.xsl`: browser-friendly sitemap table
 - `Build/`: Unity WebGL build and runtime assets
 - `image/`: website metadata and README images
 
