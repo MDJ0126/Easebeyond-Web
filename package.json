@@ -1,0 +1,8 @@
+{
+  "name": "easebeyond-web",
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate-pages.mjs",
+    "check:generated": "node scripts/generate-pages.mjs --check"
+  }
+}

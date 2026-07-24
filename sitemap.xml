@@ -3,26 +3,98 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://easebeyond.com/</loc>
-    <lastmod>2026-07-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://easebeyond.com/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://easebeyond.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://easebeyond.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://easebeyond.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easebeyond.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://easebeyond.com/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://easebeyond.com/"/>
   </url>
   <url>
     <loc>https://easebeyond.com/ko/</loc>
-    <lastmod>2026-07-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://easebeyond.com/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://easebeyond.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://easebeyond.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://easebeyond.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easebeyond.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://easebeyond.com/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://easebeyond.com/"/>
   </url>
   <url>
     <loc>https://easebeyond.com/ja/</loc>
-    <lastmod>2026-07-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://easebeyond.com/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://easebeyond.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://easebeyond.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://easebeyond.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easebeyond.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://easebeyond.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://easebeyond.com/"/>
+  </url>
+  <url>
+    <loc>https://easebeyond.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://easebeyond.com/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://easebeyond.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://easebeyond.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://easebeyond.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easebeyond.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://easebeyond.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://easebeyond.com/"/>
+  </url>
+  <url>
+    <loc>https://easebeyond.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://easebeyond.com/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://easebeyond.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://easebeyond.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://easebeyond.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easebeyond.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://easebeyond.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://easebeyond.com/"/>
+  </url>
+  <url>
+    <loc>https://easebeyond.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://easebeyond.com/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://easebeyond.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://easebeyond.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://easebeyond.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easebeyond.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://easebeyond.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://easebeyond.com/"/>
+  </url>
+  <url>
+    <loc>https://easebeyond.com/pt-br/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://easebeyond.com/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://easebeyond.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://easebeyond.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://easebeyond.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easebeyond.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://easebeyond.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://easebeyond.com/"/>
+  </url>
+  <url>
+    <loc>https://easebeyond.com/zh-tw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://easebeyond.com/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://easebeyond.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://easebeyond.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://easebeyond.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easebeyond.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://easebeyond.com/zh-tw/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://easebeyond.com/"/>
   </url>
 </urlset>

@@ -10,8 +10,14 @@
   <link rel="alternate" hreflang="en" href="https://easebeyond.com/">
   <link rel="alternate" hreflang="ko" href="https://easebeyond.com/ko/">
   <link rel="alternate" hreflang="ja" href="https://easebeyond.com/ja/">
+  <link rel="alternate" hreflang="de" href="https://easebeyond.com/de/">
+  <link rel="alternate" hreflang="fr" href="https://easebeyond.com/fr/">
+  <link rel="alternate" hreflang="es" href="https://easebeyond.com/es/">
+  <link rel="alternate" hreflang="pt-BR" href="https://easebeyond.com/pt-br/">
+  <link rel="alternate" hreflang="zh-TW" href="https://easebeyond.com/zh-tw/">
   <link rel="alternate" hreflang="x-default" href="https://easebeyond.com/">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://easebeyond.com/">
   <meta property="og:title" content="Easebeyond - Space Cruise Web Game">
   <meta property="og:description" content="Pilot your own space cruise and explore the vast universe directly in your browser.">
@@ -22,15 +28,15 @@
   <meta name="twitter:image" content="https://easebeyond.com/image/ogThumbnail.png">
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "VideoGame",
-      "name": "Easebeyond",
-      "url": "https://easebeyond.com/",
-      "description": "Pilot your own space cruise and explore the vast universe in this free browser game.",
-      "applicationCategory": "Game",
-      "gamePlatform": "Web Browser",
-      "inLanguage": "en",
-      "isAccessibleForFree": true
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Easebeyond",
+        "url": "https://easebeyond.com/",
+        "description": "Pilot your own space cruise and explore the vast universe directly in your browser.",
+        "applicationCategory": "Game",
+        "gamePlatform": "Web Browser",
+        "inLanguage": "en",
+        "isAccessibleForFree": true
     }
   </script>
   <link rel="icon" href="./image/favicon.ico">
@@ -43,9 +49,44 @@
       overflow: hidden;
       background: #000;
     }
+    iframe {
+      position: fixed;
+      inset: 0;
+    }
+    .intro {
+      position: fixed;
+      z-index: 1;
+      right: 16px;
+      bottom: 16px;
+      max-width: min(420px, calc(100% - 32px));
+      color: #fff;
+      background: rgba(7, 12, 22, .92);
+      border: 1px solid rgba(255, 255, 255, .25);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-family: system-ui, sans-serif;
+    }
+    .intro summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .intro h1 {
+      margin: 12px 0 6px;
+      font-size: 18px;
+    }
+    .intro p, .intro nav {
+      margin: 6px 0;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .intro a {
+      color: #9ecbff;
+    }
   </style>
 </head>
 <body>
-  <iframe src="./Build/" title="Easebeyond" allow="fullscreen; autoplay" allowfullscreen></iframe>
+  <iframe id="game" src="./Build/" title="Easebeyond space exploration game" allow="fullscreen; autoplay" allowfullscreen></iframe>
+
+
 </body>
 </html>
